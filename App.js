@@ -1,30 +1,47 @@
-import * as React from "react";
-import {Button, Text, TextInput, View} from "react-native";
+import React from 'react';
+import {Text, View} from 'react-native';
 
-export default function App() {
-
-    return (
-        <View
-            style={{
-                padding: 30
-            }}
-        >
-            <View style = {
-                {
-                    flexDirection : "row",
-                    justifyContent : "space-between",
-                    alignItems : "center"
-                }
-            }>
-                <TextInput placeholder="Course Goal" style={{
-                    borderColor: "black",
-                    borderWidth: 1,
-                    padding: 10,
-                    width : "80%",
-                }}/>
-                <Button title="Henlo"/>
-            </View>
-            <Text>Universal React Native with React</Text>
-        </View>
-    );
+export default function App () {
+  return (
+    <View
+      style={{
+        padding: 50,
+        flexDirection: 'row',
+        width: '80%',
+        height: 300,
+        justifyContent: 'space-around',
+        alignItems: 'stretch',
+      }}
+    >
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: 'red',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Text>1</Text>
+      </View>
+      <View
+        style={{
+          flex: 2,
+          backgroundColor: 'blue',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Text>2</Text>
+      </View>
+      <View
+        style={{
+          backgroundColor: 'green',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Text>3</Text>
+      </View>
+    </View>
+  );
 }
